@@ -1,0 +1,8 @@
+@import url('https://fonts.google.com/specimen/Josefin+Sans)');
+
+body{
+font-size: 18px;
+font-weight: 400;
+background-color: hsl(0, 0%, 98%);
+font-family: "Josefin Sans";
+}
