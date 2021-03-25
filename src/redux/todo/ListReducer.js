@@ -55,7 +55,7 @@ const ListReducer=(state=initialState,action)=>{
             case ADD_LIST:
                 return{
                     ...state,
-                    lists:[{list:action.payload,id:state.listId+1,completed:false},...state.lists],
+                    lists:[...state.lists,{list:action.payload,id:state.listId+1,completed:false}],
                     ChangedLists:[{list:action.payload,id:state.listId+1,completed:false},...state.ChangedLists],
                      listId:state.listId+1
                 
