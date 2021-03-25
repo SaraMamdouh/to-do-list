@@ -56,7 +56,7 @@ const ListReducer=(state=initialState,action)=>{
                 return{
                     ...state,
                     lists:[...state.lists,{list:action.payload,id:state.listId+1,completed:false}],
-                    ChangedLists:[{list:action.payload,id:state.listId+1,completed:false},...state.ChangedLists],
+                    ChangedLists:[...state.ChangedLists,{list:action.payload,id:state.listId+1,completed:false}],
                      listId:state.listId+1
                 
             }
